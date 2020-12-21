@@ -5,9 +5,11 @@ public class Calculator {
 		// TODO Auto-generated method stub
 		double numberA,numberB;
 		Operations operate = new Operations();
-		
+		int exit = 0;
 		Scanner input = new Scanner(System.in);
 		
+		
+		while(exit == 0) {
 		System.out.println("Enter your first number");
 		numberA = input.nextDouble();
 		System.out.println("Enter your second number");
@@ -37,8 +39,10 @@ public class Calculator {
 			System.out.println("The awnser is " + operate.sum);
 
 			break;
+			
 		
 		
 	}
-
-}}
+		System.out.println("If you would like to continue press 0");
+		exit = input.nextInt();
+}}}
